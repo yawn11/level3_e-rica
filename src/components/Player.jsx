@@ -1,4 +1,5 @@
 import React from 'react';
+import background from "../images/bg.png";
 import { useNavigate } from 'react-router-dom';
 
 export const IMG_c_0 = "https://cdn.lol.ps/assets/img/champion-portraits/";
@@ -31,7 +32,7 @@ export default function Player(props) {
 
 
     return (
-        <div className="movie-container" onClick={onClickMovieItem}>
+        <div className="movie-container" style={{ backgroundImage: `url(${background})`,backgroundSize:'cover', backgroundPosition:'center' }} onClick={onClickMovieItem}>
             <div className='movie-overview'><br/><br/><br/>MORE INFORMATION</div>
             <div className='movie-info'>
                 <div style={{width: '72px', height: '72px', marginLeft:'2px', marginRight:'2px' }}>
@@ -46,7 +47,7 @@ export default function Player(props) {
                     </div>
                 </div>
                 <div style={{ width: '122px', height: '72px', marginLeft:'16px', marginRight: '2px' }}>
-                    <div style={{ fontSize: '12px'}}>{props.nickname}</div>
+                    <div style={{ fontSize: '11px'}}>{props.nickname}</div>
                     <div style={{ fontSize: '30px', fontWeight:'bold' }}>{props.name}</div>
                     <div style={{ fontSize: '12px' }}>"{props.tmi}"</div>
                 </div>
@@ -81,13 +82,13 @@ export default function Player(props) {
                 <div className='val'>
                     <div style={{ display:'flex' }}>
                         <div style={{width: '20px', height: '20px', marginLeft:'2px', marginRight:'2px' }}>
-                            {props.position_val_0 && <img style={{ width:"80%" }} src={props.position_val_0 === '타격대' ? 타격대 : props.position_val_0 === '척후대' ? 척후대 : props.position_val_0 === '감시자' ? 감시자 : 전략가} />}
+                            {props.position_val_0 && <img style={{ width:"80%", marginBottom:'2px' }} src={props.position_val_0 === '타격대' ? 타격대 : props.position_val_0 === '척후대' ? 척후대 : props.position_val_0 === '감시자' ? 감시자 : 전략가} />}
                         </div>
                         <div style={{width: '20px', height: '20px', marginLeft:'2px', marginRight:'2px' }}>
-                            {props.position_val_1 && <img style={{ width:"80%" }} src={props.position_val_1 === '타격대' ? 타격대 : props.position_val_1 === '척후대' ? 척후대 : props.position_val_1 === '감시자' ? 감시자 : 전략가} />}
+                            {props.position_val_1 && <img style={{ width:"80%", marginBottom:'2px' }} src={props.position_val_1 === '타격대' ? 타격대 : props.position_val_1 === '척후대' ? 척후대 : props.position_val_1 === '감시자' ? 감시자 : 전략가} />}
                         </div>
-                        <div style={{width: '20px', height: '20px', marginLeft:'2px', marginRight:'2px'}}>
-                            {props.position_val_2 && <img style={{ width:"80%" }} src={props.position_val_2 === '타격대' ? 타격대 : props.position_val_2 === '척후대' ? 척후대 : props.position_val_2 === '감시자' ? 감시자 : 전략가} />}
+                        <div style={{width: '20px', height: '20px', marginLeft:'2px', marginRight:'2px' }}>
+                            {props.position_val_2 && <img style={{ width:"80%", marginBottom:'2px' }} src={props.position_val_2 === '타격대' ? 타격대 : props.position_val_2 === '척후대' ? 척후대 : props.position_val_2 === '감시자' ? 감시자 : 전략가} />}
                         </div>
                     </div>
                     <div style={{ display:'flex', marginTop:'4px' }}>

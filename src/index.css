@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'Giants';
+  src: url('./fonts/Giants-Regular.otf') format('opentype');
+}
+
+body {
+	font-family: 'Giants-Regular';
+}
+
+
 .root-wrap {
   position: absolute;
   top: 0;
@@ -54,11 +64,17 @@
   width: 300px;
   height: 200px;
   margin: 16px;
-  background-color: #dd304ade;
   color: white;
   border-radius: 5px;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
 }
+
+/*.movie-bg {
+  position: absolute;
+  overflow: hidden;
+  height: 100%;
+  border-radius: 5px;
+}*/
 
 .movie-overview {
   display: none;
