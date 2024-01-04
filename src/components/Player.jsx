@@ -10,10 +10,11 @@ export const IMG_p_1 = "-wh.svg";
 
 export const IMG_t_0 = "https://opgg-static.akamaized.net/images/medals_new/";
 export const IMG_t_1 = ".png?image=q_auto,f_webp,w_144&amp;v=1702977255104";
+export const 언랭 = "https://cdn.dak.gg/tft/images2/tft/tiers/provisional.png?set=10"
 
 export const IMG_t_v_0 = "https://s-valorant-api.op.gg/Tiers/Icons/";
 export const IMG_t_v_1 = ".svg?image=q_auto,f_webp,w_120,h_120&v=9187748864";
-export const 언랭 = "https://trackercdn.com/cdn/tracker.gg/valorant/icons/tiersv2/0.png"
+export const 언랭_v = "https://trackercdn.com/cdn/tracker.gg/valorant/icons/tiersv2/0.png"
 
 export const 타격대 = "//i.namu.wiki/i/X08Y5vPKwd4zBQ76rSquNiFmrvl27JJ953ryqtEGNDzBSzYgF2KyRRB8A6hP7Qm2IwwGOooUFfmmwX1FKi2pHg.webp";
 export const 척후대 = "//i.namu.wiki/i/DoB3XwA-liC2Cb_zhco3nBKIN_2L5O38IoZJU2_ewGunN-nGiIix3MbRn4jhn_FG5vmPKoR3T_5zdmmO0PSc2g.webp";
@@ -93,12 +94,12 @@ export default function Player(props) {
                     </div>
                     <div style={{ display:'flex', marginTop:'4px' }}>
                         <div style={{width: '43px', height: '43px', marginLeft:'2px', marginRight:'2px' }}>
-                            {props.tier_val_top_0 ? <img src={IMG_t_v_0 + props.tier_val_top_0 + IMG_t_v_1} style={{width:'100%'}}/> : <img src={언랭} style={{width:'100%'}}/>}
+                            {props.tier_val_top_0 ? <img src={IMG_t_v_0 + props.tier_val_top_0 + IMG_t_v_1} style={{width:'100%'}}/> : <img src={언랭_v} style={{width:'100%'}}/>}
                         </div>
                         <div>
                             <div style={{ fontSize: '12px', fontWeight:'bold', textAlign:'center', marginTop:'2px' }}>VAL</div>
                             <div style={{ width: '27px', height: '27px', marginLeft:'2px', marginRight:'2px' }}>
-                                {props.tier_val_pre_0 ? <img src={IMG_t_v_0 + props.tier_val_pre_0 + IMG_t_v_1} style={{width:'100%'}}/> : <img src={언랭} style={{width:'100%'}}/>}
+                                {props.tier_val_pre_0 ? <img src={IMG_t_v_0 + props.tier_val_pre_0 + IMG_t_v_1} style={{width:'100%'}}/> : <img src={언랭_v} style={{width:'100%'}}/>}
                             </div>
                         </div>
                     </div>
@@ -111,12 +112,12 @@ export default function Player(props) {
                     </div>
                     <div style={{ display:'flex', marginTop:'4px' }}>
                         <div style={{width: '43px', height: '43px', marginLeft:'2px', marginRight:'2px' }}>
-                            {props.tier_tft_top_0 && <img src={IMG_t_0 + props.tier_tft_top_0 + IMG_t_1} style={{width:'100%'}}/>}
+                            {props.tier_tft_top_0 ? <img src={IMG_t_0 + props.tier_tft_top_0 + IMG_t_1} style={{width:'100%'}}/>: <img src={언랭} style={{width:'100%'}}/>}
                         </div>
                         <div>
                             <div style={{ fontSize: '12px', fontWeight:'bold', textAlign:'center', marginTop:'2px' }}>TFT</div>
                             <div style={{ width: '27px', height: '27px', marginLeft:'2px', marginRight:'2px' }}>
-                                {props.tier_tft_pre_0 && <img src={IMG_t_0 + props.tier_tft_pre_0 + IMG_t_1} style={{width:'100%'}}/>}
+                                {props.tier_tft_pre_0 ? <img src={IMG_t_0 + props.tier_tft_pre_0 + IMG_t_1} style={{width:'100%'}}/>: <img src={언랭} style={{width:'100%'}}/>}
                             </div>
                         </div>
                     </div>

@@ -110,3 +110,52 @@ body {
 .movie-info span {
   margin-left: 3px;
 }
+
+.auction-container {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 20px;
+  width:1200px;
+  height:600px;
+  background-color:rgb(253, 213, 234);
+  border-radius: 60px;
+}
+
+.auction-board {
+  width: 600px;
+  height: 360px;
+  background-color: azure;
+  border-radius: 20px;
+  margin: 40px auto;
+}
+
+.team-above {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team1-container {
+  width: 500px;
+  height: 80px;
+  background-color: blue;
+}
+
+.team-bottom {
+  display: flex;
+  position:relative;
+  justify-content: space-between;
+}
+
+.team2-container {
+  
+  width: 500px;
+  height: 80px;
+  background-color: rgb(183, 255, 0);
+}
+
+.team3-container {
+  
+  width: 500px;
+  height: 80px;
+  background-color: rgb(0, 255, 213);
+}
